@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include "header.h"
+#include "stack.h"
 
 void push(StackNodePtr *topPtr, int info)
 {

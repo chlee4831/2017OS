@@ -33,6 +33,8 @@ void main()
         instructions();
         break;
     }
+    printf("? ");
+    scanf("%d", &choice);
   }
 
     printf("End of run.\n");

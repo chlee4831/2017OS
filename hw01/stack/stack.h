@@ -10,3 +10,4 @@ void push(StackNodePtr *topPtr, int info);
 int pop(StackNodePtr *topPtr);
 int isEmpty(StackNodePtr topPtr);
 void printStack(StackNodePtr currentPtr);
+void instructions();

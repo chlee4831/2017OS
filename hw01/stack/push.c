@@ -5,7 +5,8 @@
 void push(StackNodePtr *topPtr, int info)
 {
   StackNodePtr newPtr;
-  newPtr = malloc(sizeof(StackNode))
+  newPtr = malloc(sizeof(StackNode));
+  
   if(newPtr != NULL)
   {
     newPtr->data = info;

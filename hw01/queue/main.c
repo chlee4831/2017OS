@@ -38,7 +38,7 @@ void main()
     }
 
     printf("? ");
-    scanf("%d, &choice");
+    scanf("%d", &choice);
   }
   printf("End of run.\n");
 }

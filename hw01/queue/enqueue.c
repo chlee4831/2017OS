@@ -12,9 +12,9 @@ void enqueue(QueueNodePtr *headPtr, QueueNodePtr *tailPtr, char value)
     newPtr->nextPtr = NULL;
 
     if(isEmpty(*headPtr))
-      headPtr = newPtr;
+      *headPtr = newPtr;
     else
-      *tailPtr->nextPtr = newPtr;
+      (*tailPtr)->nextPtr = newPtr;
 
     *tailPtr = newPtr;
   }

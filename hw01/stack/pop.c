@@ -8,8 +8,8 @@ int pop(StackNodePtr *topPtr)
   int popValue;
 
   tempPtr = *topPtr;
-  popValue = *topPtr->data;
-  *topPtr = *topPtr->nextPtr;
+  popValue = (*topPtr)->data;
+  *topPtr = (*topPtr)->nextPtr;
   free(tempPtr);
   return popValue;
 }

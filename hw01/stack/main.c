@@ -3,12 +3,12 @@
 
 void main()
 {
-  StackNodePtr stackPrt = NULL;
+  StackNodePtr stackPtr = NULL;
   int choice, value;
 
   instructions();
   printf("? ");
-  scanf("%d", choice);
+  scanf("%d", &choice);
 
   while(choice != 3)
   {
@@ -16,7 +16,7 @@ void main()
     {
       case 1:
         printf("Enter an integet : ");
-        scanf("%d, &value");
+        scanf("%d", &value);
         push(&stackPtr, value);
         printStack(stackPtr);
         break;

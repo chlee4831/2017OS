@@ -5,11 +5,11 @@
 char dequeue(QueueNodePtr *headPtr, QueueNodePtr *tailPtr)
 {
   char value;
-  queueNodePtr tempPtr;
+  QueueNodePtr tempPtr;
 
-  value = *headPtr->data;
+  value = (*headPtr)->data;
   tempPtr = *headPtr;
-  *headPtr = *headPtr->nextPtr;
+  *headPtr = (*headPtr)->nextPtr;
 
   if(*headPtr == NULL)
     *tailPtr == NULL;

@@ -1,5 +1,5 @@
 program : main.o dequeue.o enqueue.o instructions.o isEmpty.o printQueue.o
-	gcc -o queue main.o dequeue.o enqueue.o instructions.o isEmpty.o printQueue.o
+	gcc -o queue_make main.o dequeue.o enqueue.o instructions.o isEmpty.o printQueue.o
 main.o : main.c
 	gcc -c main.c
 dequeue.o : dequeue.c

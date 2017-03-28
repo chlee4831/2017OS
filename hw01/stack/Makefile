@@ -1,5 +1,5 @@
 program : main.o push.o pop.o instructions.o isEmpty.o printStack.o
-	gcc -o stack main.o push.o pop.o instructions.o isEmpty.o printStack.o
+	gcc -o stack_make main.o push.o pop.o instructions.o isEmpty.o printStack.o
 main.o : main.c
 	gcc -c main.c
 push.o : push.c

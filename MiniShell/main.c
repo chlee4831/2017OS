@@ -9,26 +9,35 @@ int main()
 {
 	char str[size]; //이름 size==10으로 define
 	char* inst = NULL;
-	char* arg = NULL;
+	char* arg1 = NULL;
+	char* arg2 = NULL;
 
 	printf("-------------------SHELL-------------------\n");
-	printf("ls, pwd 사용가능\n");
+	printf("ls, pwd, mkdir, rm , exit\n");
 
 	while (true)
 	{
-		printf("COMMAND! ");
+		printf("-> ");
 		gets(str);
 		inst = strtok(str, " ");
-		arg = strtok(NULL, " ");
+		arg1 = strtok(NULL, " ");
+		arg2 = strtok(NULL, " ");
 
-		if (!strcmp("ls", str))
-		{ //std=="ls"
-			ls(arg);
-		}
-		if (!strcmp("pwd", str))
-		{ //std=="ls"
+		if (!strcmp("ls", inst))
+			ls(arg1);
+
+		if (!strcmp("pwd", inst))
 			pwd();
-		}
+
+		if (!strcmp("mkdir", inst))
+			mkdir(arg1);
+
+		if (!strcmp("rm", inst))
+			rm(arg1, arg2);
+
+		if (!strcmp("exit", inst))
+			break;
 	}
+
 	return 0;
 }
